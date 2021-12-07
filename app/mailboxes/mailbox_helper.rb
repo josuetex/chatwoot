@@ -31,6 +31,6 @@ module MailboxHelper
 
   def notification_email_from_chatwoot?
     # notification emails are send via mailer sender email address. so it should match
-    @processed_mail.original_sender == Mail::Address.new(ENV.fetch('MAILER_SENDER_EMAIL', 'Chatwoot <accounts@chatwoot.com>')).address
+    @processed_mail.original_sender == Mail::Address.new(ENV.fetch('MAILER_SENDER_EMAIL', 'MikWeb <contato@mikweb.com.br>')).address
   end
 end
